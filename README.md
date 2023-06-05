@@ -119,7 +119,7 @@ To initialise a netlify site
 
 
 To setup a serverless function
-    netlify functions:create
+     netlify functions:create
 
 The url of your serverless function
     https://<YOUR-SITE-URL>.netlify.app/.netlify/functions/fetchAI
