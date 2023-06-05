@@ -1,12 +1,3 @@
-// import { Configuration, OpenAIApi } from 'openai'
-// import { process } from './env'
-
-// const configuration = new Configuration({
-//     apiKey: process.env.OPENAI_API_KEY,
-// })
-
-// const openai = new OpenAIApi(configuration)
-
 const chatbotConversation = document.getElementById('chatbot-conversation')
  
 let conversationStr = ''
@@ -43,35 +34,6 @@ async function fetchReply(){
 
     conversationStr += ` ${aiReply} \n`
     renderTypewriterText(aiReply)
-/*
-Challenge:
-  1. Make a fetch request to the url using the 
-     following details. 
-     - The method should be 'POST'
-     - In the headers, the 'content-type' should 
-       be 'text/plain'
-     - The body should hold conversationStr
-  2. Save the response to a const and log it out. 
-  3. Copy and paste the updated fetchReply function 
-     to VS Code and delete any unnecessary code from 
-     index.js
-  4. Push the changes to GitHub to trigger a
-     redeploy.
-  5. Navigate to your Netlify site, hit send 
-     and see what you get in the console. (You 
-     should see "Hello World" in an object).
-*/
-    // const response = await openai.createCompletion({
-    //     model: 'davinci:ft-scrimba-2023-03-30-23-10-03',
-    //     prompt: conversationStr,
-    //     presence_penalty: 0,
-    //     frequency_penalty: 0.3,
-    //     max_tokens: 100,
-    //     temperature: 0,
-    //     stop: ['\n', '->']
-    // })
-    // conversationStr += ` ${response.data.choices[0].text} \n`
-    // renderTypewriterText(response.data.choices[0].text)
 }
 
 function renderTypewriterText(text) {
