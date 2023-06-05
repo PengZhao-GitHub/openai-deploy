@@ -107,3 +107,19 @@ Job complete! Status: succeeded 🎉
 Try out your fine-tuned model:
 
 openai api completions.create -m davinci:ft-personal-2023-06-05-04-44-00 -p <YOUR_PROMPT>
+
+
+=====================
+
+To install the Netlify cli
+    npm install netlify-cli -g
+
+To initialise a netlify site
+    netlify init 
+
+
+To setup a serverless function
+    netlify functions:create
+
+The url of your serverless function
+    https://<YOUR-SITE-URL>.netlify.app/.netlify/functions/fetchAI
