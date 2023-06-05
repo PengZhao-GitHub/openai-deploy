@@ -41,8 +41,8 @@ async function fetchReply(){
     const aiReply = data.reply.choices[0].text
     console.log(aiReply)
 
-    // conversationStr += ` ${data.choices[0].text} \n`
-    // renderTypewriterText(response.data.choices[0].text)
+    conversationStr += ` ${aiReply} \n`
+    renderTypewriterText(aiReply)
 /*
 Challenge:
   1. Make a fetch request to the url using the 
