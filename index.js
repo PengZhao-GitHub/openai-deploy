@@ -33,7 +33,7 @@ async function fetchReply(){
             'content-type': 'text/plain',
         },
         body: conversationStr,
-        mode: 'no-cors'
+        //mode: 'no-cors'
     })
     const data = await response.json()
     console.log(data)
