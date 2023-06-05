@@ -32,7 +32,8 @@ async function fetchReply(){
         headers: {
             'content-type': 'text/plain',
         },
-        body: conversationStr
+        body: conversationStr,
+        mode: 'no-cors'
     })
     const data = await response.json()
     console.log(data)
